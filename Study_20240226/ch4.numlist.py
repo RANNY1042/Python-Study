@@ -44,5 +44,15 @@ b = [3,4]
 c = a+b
 print(c)
 
-e=c-b
-print(e)
+
+e1=[x for x in a if x not in b]
+e2=list(set(c)-set(b))
+print(e1)
+print(e2)
+
+a = [10,20,30,40,50]
+b = a[:]    # b=a ### shallow copy
+print(b)
+a[0]=100
+print(b)
+
