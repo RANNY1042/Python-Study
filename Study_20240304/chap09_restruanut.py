@@ -16,3 +16,18 @@ DB_restaurant.open_restaurant()
 DB_restaurant.describe_restaurant()
 
 DB_restaurant.restaurant_name
+
+
+class IceCreamStand(Restaurant):
+    def __init__(self, name, ctype, flavors):
+        super().__init__(name,ctype)
+        self.flavors = flavors
+    
+    def show_flavors(self):
+        print(f"맛이 {}".format(self.flavors))
+        print(f"맛이 {self.flavors}")
+
+new_reset = Restaurant()
+ice_Cream = IceCreamStand('Italy','pizza','매운맛')
+ice_Cream.show_flavors()
+
