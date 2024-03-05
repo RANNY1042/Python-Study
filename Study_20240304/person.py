@@ -26,9 +26,10 @@ class Person :
     def __getitem__(self, indx):
         return self.weight[indx]
     
+    @classmethod  ##decorator    / 자바용어는 annotation
     def __del__(self):
         print("객체 {}이 소멸됨".format(self.name))
-        Person.count += 1 
+        Person.count += 1  
 
 Person('guest',11,'jeju')
 
